@@ -31,6 +31,7 @@ func TestParseDuration(t *testing.T) {
 		"PT1.97S":       1.97,
 		"PT1H2M3.456S":  3723.456,
 		"P1DT2H":        (26 * time.Hour).Seconds(),
+		"P0Y0M1DT2H":    (26 * time.Hour).Seconds(),
 		"PT20M":         (20 * time.Minute).Seconds(),
 		"PT1M30.5S":     (time.Minute + 30*time.Second + 500*time.Millisecond).Seconds(),
 		"PT1004199059S": (1004199059 * time.Second).Seconds(),
